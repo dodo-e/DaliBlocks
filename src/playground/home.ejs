@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Create and play projects with DaliBlocks.">
+    <meta name="theme-color" content="#1A1F4B">
+    <title>DaliBlocks</title>
+    <link rel="icon" type="image/png" href="<%= htmlWebpackPlugin.options.root %>images/LOGO.png">
+    <link rel="apple-touch-icon" href="<%= htmlWebpackPlugin.options.root %>images/LOGO.png">
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #1A1F4B;
+        background: #F2F6FF;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        padding: 1rem max(1.5rem, calc((100% - 960px) / 2));
+        background: #1A1F4B;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        color: #fff;
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .brand img {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+      }
+      main {
+        width: min(100% - 2rem, 760px);
+        margin: auto;
+        padding: 4rem 0;
+        text-align: center;
+      }
+      main img {
+        width: 120px;
+        height: 120px;
+      }
+      h1 {
+        margin: 1rem 0 0.5rem;
+        font-size: clamp(2.5rem, 8vw, 4rem);
+      }
+      .intro {
+        margin: 0 auto 2rem;
+        max-width: 38rem;
+        color: #424b70;
+        font-size: 1.15rem;
+        line-height: 1.6;
+      }
+      .actions, nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+      }
+      .button {
+        display: inline-block;
+        min-width: 9rem;
+        padding: 0.85rem 1.25rem;
+        border: 2px solid #1E88E5;
+        border-radius: 0.6rem;
+        background: #1E88E5;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .button.secondary {
+        border-color: #5C6BE0;
+        background: #5C6BE0;
+      }
+      a:focus-visible {
+        outline: 3px solid #7E57C2;
+        outline-offset: 3px;
+      }
+      nav {
+        margin-top: 2rem;
+      }
+      nav a, footer a {
+        color: #1A1F4B;
+      }
+      footer {
+        padding: 1.25rem;
+        background: #e5ebfa;
+        text-align: center;
+      }
+      footer p {
+        margin: 0.5rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="<%= htmlWebpackPlugin.options.root %>">
+        <img src="<%= htmlWebpackPlugin.options.root %>images/LOGO.png" alt="">
+        <span>DaliBlocks</span>
+      </a>
+    </header>
+    <main>
+      <img src="<%= htmlWebpackPlugin.options.root %>images/LOGO.png" alt="DaliBlocks logo">
+      <h1>Welcome to DaliBlocks</h1>
+      <p class="intro">Create, explore, and play with projects in a block-based coding editor.</p>
+      <div class="actions">
+        <a class="button" href="<%= htmlWebpackPlugin.options.root %>editor.html">Open Editor</a>
+        <a class="button secondary" href="<%= htmlWebpackPlugin.options.root %>playground.html">Open Playground</a>
+      </div>
+      <nav aria-label="More DaliBlocks pages">
+        <a href="<%= htmlWebpackPlugin.options.root %>player.html">Project Player</a>
+        <a href="<%= htmlWebpackPlugin.options.root %>addons.html">Add-ons</a>
+        <a href="<%= htmlWebpackPlugin.options.root %>credits.html">Credits</a>
+        <a href="<%= htmlWebpackPlugin.options.root %>privacy.html">Privacy</a>
+        <a href="<%= htmlWebpackPlugin.options.root %>terms.html">Terms</a>
+        <a href="<%= htmlWebpackPlugin.options.root %>contact.html">Contact</a>
+        <a href="https://github.com/dodo-e/DaliBlocks">GitHub</a>
+      </nav>
+    </main>
+    <footer>
+      <p>DaliBlocks is not affiliated with Scratch, the Scratch Team, or the Scratch Foundation.</p>
+      <p><a href="<%= htmlWebpackPlugin.options.root %>contact.html">Contact</a></p>
+    </footer>
+  </body>
+</html>

@@ -8,7 +8,7 @@ const showSaveFilePicker = fileName => window.showSaveFilePicker({
     ...(!isTypeFilterAvailable() ? {} : {
         types: [
             {
-                description: 'PenguinMod Project',
+                description: 'DaliBlocks Project',
                 accept: {
                     'application/x.scratch.sb3': '.pmp'
                 }
@@ -30,7 +30,7 @@ const showOpenFilePicker = async () => {
                     }
                 },
                 {
-                    description: 'PenguinMod Project',
+                    description: 'DaliBlocks Project',
                     accept: {
                         'application/x.scratch.sb3': ['.pmp', '.pm']
                     }

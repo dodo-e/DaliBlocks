@@ -25,8 +25,8 @@ self.addEventListener('fetch', event => {
     if (event.request.method !== 'GET') return;
 
     let relativePathname = url.pathname.substr(base.length);
-    if (/^(\d+\/?)?$/.test(relativePathname)) {
-        relativePathname = 'index.html';
+    if (/^\d+\/?$/.test(relativePathname)) {
+        relativePathname = 'player.html';
     } else if (/^(\d+\/)?editor\/?$/i.test(relativePathname)) {
         relativePathname = 'editor.html';
     } else if (/^(\d+\/)?playground\/?$/i.test(relativePathname)) {

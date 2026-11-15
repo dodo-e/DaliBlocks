@@ -142,7 +142,7 @@ const Footer = () => (
             <div className={styles.footerText}>
                 <FormattedMessage
                     // eslint-disable-next-line max-len
-                    defaultMessage="PenguinMod and TurboWarp are not affiliated with Scratch, the Scratch Team, or the Scratch Foundation."
+                    defaultMessage="DaliBlocks, PenguinMod and TurboWarp are not affiliated with Scratch, the Scratch Team, or the Scratch Foundation."
                     description="Disclaimer that PenguinMod and TurboWarp are not connected to Scratch"
                     id="tw.footer.disclaimer"
                 />
@@ -274,9 +274,9 @@ class Interface extends React.Component {
     }
     handleUpdateProjectTitle (title, isDefault) {
         if (isDefault || !title) {
-            document.title = `PenguinMod - ${this.props.intl.formatMessage(messages.defaultTitle)}`;
+            document.title = `DaliBlocks - ${this.props.intl.formatMessage(messages.defaultTitle)}`;
         } else {
-            document.title = `${title} - PenguinMod`;
+            document.title = `${title} - DaliBlocks`;
         }
     }
     copyProjectLink (id) {

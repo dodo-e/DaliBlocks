@@ -7,6 +7,7 @@ const PLUGIN_NAME = 'TWGenerateServiceWorkerPlugin';
 const SW_NAME = 'sw.js';
 const INCLUDE_HTML = [
     'index.html',
+    'player.html',
     'editor.html',
     'playground.html',
     'fullscreen.html',

@@ -1,20 +1,15 @@
 {
-  "short_name": "PenguinMod",
-  "name": "PenguinMod",
+  "short_name": "DaliBlocks",
+  "name": "DaliBlocks",
   "description": "Mod of TurboWarp that was made to allow for really cool projects.",
   "icons": [
     {
-      "src": "images/192.png",
+      "src": "images/LOGO.png",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "images/512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "300x300"
     }
   ],
-  "start_url": "editor",
+  "start_url": "./",
   "background_color": "#333333",
   "display": "standalone",
   "theme_color": "#333333"

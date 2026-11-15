@@ -186,7 +186,7 @@
 
 .inspect-extension {
     position: relative;
-    background: #00c3ff;
+    background: $motion-primary;
     color: white;
     font-weight: bold;
     padding: 0;
